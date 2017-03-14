@@ -1,0 +1,46 @@
+.hz-datepicker-container{
+  max-width: 400px;
+  margin:0 auto;
+  .hz-datepicker-inner{
+    .days{
+      display: flex;
+      flex-direction: row;
+
+      .days-next, .days-prev{
+        align-self: flex-end;
+        padding-bottom: 10px;
+      }
+      .days-prev{
+        justify-content: flex-start;
+      }
+      .days-next{
+        justify-content: flex-end;
+      }
+      .days-inner{
+        margin: 0 4px;
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+        max-width: 100%;
+        padding-bottom: 10px;
+      }
+      .day-item{
+        text-align: center;
+        flex: 1;
+        display: inline-block;
+          
+        .weekday{
+          &.is-weekend{
+            color: orange;
+          }
+        }
+        &.selected{
+          color: white;
+        }
+      }
+    }
+    .selected-date{
+      margin: 10px 0;
+    }
+  }
+}
