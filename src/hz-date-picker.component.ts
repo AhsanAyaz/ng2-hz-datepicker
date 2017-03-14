@@ -43,7 +43,50 @@ export interface DPConfig{
       </div>
   </div>
   `,
-  styleUrls: ['hz-date-picker.component.scss']
+  styles: [`
+    .hz-datepicker-container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .hz-datepicker-container .hz-datepicker-inner .days {
+      display: flex;
+      flex-direction: row;
+    }
+    .hz-datepicker-container .hz-datepicker-inner .days .days-next, .hz-datepicker-container .hz-datepicker-inner .days .days-prev {
+      align-self: flex-end;
+      padding-bottom: 10px;
+    }
+    .hz-datepicker-container .hz-datepicker-inner .days .days-prev {
+      justify-content: flex-start;
+    }
+    .hz-datepicker-container .hz-datepicker-inner .days .days-next {
+      justify-content: flex-end;
+    }
+    .hz-datepicker-container .hz-datepicker-inner .days .days-inner {
+      margin: 0 4px;
+      overflow-y: hidden;
+      overflow-x: auto;
+      white-space: nowrap;
+      max-width: 100%;
+      padding-bottom: 10px;
+    }
+    .hz-datepicker-container .hz-datepicker-inner .days .day-item {
+      text-align: center;
+      flex: 1;
+      display: inline-block;
+    }
+    .hz-datepicker-container .hz-datepicker-inner .days .day-item .weekday.is-weekend {
+      color: orange;
+    }
+    .hz-datepicker-container .hz-datepicker-inner .days .day-item.selected {
+      color: white;
+    }
+    .hz-datepicker-container .hz-datepicker-inner .selected-date {
+      margin: 10px 0;
+    }
+
+  
+  `]
 })
 export class HZDatePickerComponent implements OnInit, AfterViewInit {
   @ViewChild('hzDatePicker') hzDatePicker: ElementRef;

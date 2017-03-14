@@ -1,6 +1,6 @@
 {
   "name": "ng2-hz-datepicker",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "scripts": {
     "build": "ngc -p tsconfig.json",
     "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
