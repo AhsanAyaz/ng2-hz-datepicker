@@ -60,7 +60,7 @@ property | type | description
  ## Methods
 
 method | description 
----------|----------|----------
+---------|----------
  onDateChange | an emmitter that is fired when a date button is clicked to select a different date
 
 
