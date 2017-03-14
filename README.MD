@@ -32,8 +32,8 @@ import { HZDatePickerModule } from 'ng2-hz-datepicker';
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
-    HZDatePickerModule
+    // import the datepicker library
+    HZDatePickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -44,7 +44,7 @@ export class AppModule { }
 Once your library is imported, you can use its components, directives and pipes in your Angular application:
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
+<!-- You can now use the library component in app.component.html -->
 <h1>
   {{title}}
 </h1>
