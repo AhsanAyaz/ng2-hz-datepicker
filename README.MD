@@ -6,6 +6,11 @@ Purely based on Angular2 & Typescript, no third party libraries involved (yet).
 The picker is more suitable for mobile views as I needed this in one of my freelance projects (an angular2 based mobile-web).
 Couldn't find a suitable plugin so created my own ;)
 
+
+## Live Demo
+The live examples can be see here: 
+[https://ahsanayaz.github.io/ng2-hz-datepicker-example/](https://ahsanayaz.github.io/ng2-hz-datepicker-example/)
+
 ## Installation
 
 To install this library, run:

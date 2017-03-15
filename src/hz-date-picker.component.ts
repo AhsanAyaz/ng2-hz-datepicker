@@ -78,8 +78,8 @@ export interface DPConfig{
     .hz-datepicker-container .hz-datepicker-inner .days .day-item .weekday.is-weekend {
       color: orange;
     }
-    .hz-datepicker-container .hz-datepicker-inner .days .day-item.selected {
-      color: white;
+    .hz-datepicker-container .hz-datepicker-inner .days .day-item .dp-button-day.selected {
+      font-weight: 800;
     }
     .hz-datepicker-container .hz-datepicker-inner .selected-date {
       margin: 10px 0;
@@ -111,7 +111,9 @@ export class HZDatePickerComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(){
     this.updateDateBtns();
     this.setDefaultConfigValues();
-    this.viewLoaded = true;
+    setTimeout(()=>{
+      this.viewLoaded = true;
+    },0);
   }
 
   /**
