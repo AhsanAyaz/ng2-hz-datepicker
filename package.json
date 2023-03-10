@@ -1,48 +1,39 @@
 {
-  "name": "ng2-hz-datepicker",
-  "version": "0.1.10",
+  "name": "ngx-hz-datepicker-ws",
+  "version": "0.0.0",
   "scripts": {
-    "build": "ngc -p tsconfig.json",
-    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
-    "test": "tsc && karma start",
-    "prepublish": "tsc",
-    "tsc": "tsc"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AhsanAyaz/ng2-hz-datepicker"
-  },
-  "author": {
-    "name": "Ahsan Ayaz",
-    "email": "ahsan.ubitian@gmail.com"
-  },
-  "keywords": [
-    "angular"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AhsanAyaz/ng2-hz-datepicker/issues"
-  },
-  "main": "./dist/index.js",
+  "private": true,
   "dependencies": {
+    "@angular/animations": "^15.0.0",
+    "@angular/common": "^15.0.0",
+    "@angular/compiler": "^15.0.0",
+    "@angular/core": "^15.0.0",
+    "@angular/forms": "^15.0.0",
+    "@angular/platform-browser": "^15.0.0",
+    "@angular/platform-browser-dynamic": "^15.0.0",
+    "@angular/router": "^15.0.0",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.12.0"
   },
   "devDependencies": {
-    "@angular/common": "^2.0.0",
-    "@angular/compiler": "^2.4.5",
-    "@angular/compiler-cli": "^2.4.5",
-    "@angular/core": "^2.0.0",
-    "@angular/platform-browser": "^2.4.5",
-    "@angular/platform-server": "^2.4.5",
-    "codelyzer": "^3.0.0-beta.0",
-    "rxjs": "^5.0.1",
-    "tslint": "^4.5.1",
-    "typescript": "^2.0.2",
-    "zone.js": "0.7.2",
-    "@types/es6-shim": "^0.31.32",
-    "@types/jasmine": "^2.5.40",
-    "@types/selenium-webdriver": "^2.53.39"
-  },
-  "engines": {
-    "node": ">=0.8.0"
+    "@angular-devkit/build-angular": "^15.0.5",
+    "@angular/cli": "~15.0.4",
+    "@angular/compiler-cli": "^15.0.0",
+    "@types/jasmine": "~4.3.0",
+    "jasmine-core": "~4.5.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "ng-packagr": "^15.0.0",
+    "typescript": "~4.8.2"
   }
 }
