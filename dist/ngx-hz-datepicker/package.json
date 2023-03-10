@@ -1,0 +1,31 @@
+{
+  "name": "ngx-hz-datepicker",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^15.0.0",
+    "@angular/core": "^15.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "module": "fesm2015/ngx-hz-datepicker.mjs",
+  "es2020": "fesm2020/ngx-hz-datepicker.mjs",
+  "esm2020": "esm2020/ngx-hz-datepicker.mjs",
+  "fesm2020": "fesm2020/ngx-hz-datepicker.mjs",
+  "fesm2015": "fesm2015/ngx-hz-datepicker.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/ngx-hz-datepicker.mjs",
+      "es2020": "./fesm2020/ngx-hz-datepicker.mjs",
+      "es2015": "./fesm2015/ngx-hz-datepicker.mjs",
+      "node": "./fesm2015/ngx-hz-datepicker.mjs",
+      "default": "./fesm2020/ngx-hz-datepicker.mjs"
+    }
+  },
+  "sideEffects": false
+}
